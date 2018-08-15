@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('mail_from', models.EmailField(max_length=254)),
                 ('address', models.EmailField(max_length=254)),
                 ('feedback_id', models.CharField(max_length=100, null=True, blank=True)),
-                ('feedback_timestamp', models.DateTimeField(null=True, verbose_name=b'Feedback Time', blank=True)),
+                ('feedback_timestamp', models.DateTimeField(null=True, verbose_name='Feedback Time', blank=True)),
                 ('delivered_time', models.DateTimeField(null=True, blank=True)),
                 ('processing_time', models.PositiveSmallIntegerField(default=0)),
                 ('smtp_response', models.TextField(null=True, blank=True)),
@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='bounce',
             name='feedback_timestamp',
-            field=models.DateTimeField(null=True, verbose_name=b'Feedback Time', blank=True),
+            field=models.DateTimeField(null=True, verbose_name='Feedback Time', blank=True),
         ),
         migrations.AlterField(
             model_name='complaint',
@@ -52,6 +52,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='complaint',
             name='feedback_timestamp',
-            field=models.DateTimeField(null=True, verbose_name=b'Feedback Time', blank=True),
+            field=models.DateTimeField(null=True, verbose_name='Feedback Time', blank=True),
         ),
     ]
